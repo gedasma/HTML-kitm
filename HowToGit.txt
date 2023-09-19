@@ -1,0 +1,19 @@
+MERGING BRANCHES
+	git checkout <branch to merge into>	
+	git checkout <branch from where to merge> <filename> <filename>
+	git commit -m "message"
+	git push
+
+CREATING FOLDERS
+	git add <folder name WITH ATLEAST 1 FILE INSIDE>
+	git commit -m "message"
+
+UPDATING TO A BRANCH
+	git pull <repository link> <branch>
+
+DOWNLOADING A BRANCH
+	
+CHANGING/SETTING ORIGIN
+	git remote set-url origin <repo link>
+
+Gediminas M
