@@ -12,8 +12,18 @@ UPDATING TO A BRANCH
 	git pull <repository link> <branch>
 
 DOWNLOADING A BRANCH
+
+CREATING NEW BRANCH
+	git branch <branch name> (create a branch locally)
+	git checkout <branchname> (go into local? branch)
+	git push --set-upstream origin <branchname>
 	
 CHANGING/SETTING ORIGIN
 	git remote set-url origin <repo link>
+
+COMMITING
+	git add <filename(with relative path index.html => folder/index.html)> (can use "git add ." to add everything)
+	git commit -m "message"
+	git push
 
 Gediminas M
