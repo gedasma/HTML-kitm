@@ -1,8 +1,13 @@
 MERGING BRANCHES
 	git checkout <branch to merge into>	
-	git checkout <branch from where to merge> <filename> <filename>
+	git merge <branch to merge from>
 	git commit -m "message"
 	git push
+	https://barbagroup.github.io/essential_skills_RRC/git/branching/
+
+DELETE BRANCH
+	git branch -d <branch name> (locally)
+	git push origin --delete remoteBranchName (remote)
 
 CREATING FOLDERS
 	git add <folder name WITH ATLEAST 1 FILE INSIDE>
