@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@email.com">
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="cnfPassword">Confirm password:</label>
+            <input type="password" name="cnfPassword" id="cnfPassword">
+        </div>
+
+        <div>
+            <label for="picture">Upload picture:</label>
+            <input type="file" name="picture" id="picture">
+        </div>
+        <div>
+            Gender:
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Female</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Male</label>
+        </div>
+        <div>
+            <label for="country">Select country: </label>
+        
+            <select name="country" id="country">
+                <option value="lt">Lithuania</option>
+                <option value="lv">Latvia</option>
+                <option value="es">Estonia</option>
+            </select>
+        </div>
+
+        <div>
+            Hobby:
+            <input type="checkbox" id="cricket" name="hobby" value="cricket">
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" id="football" name="hobby" value="football">
+            <label for="football">Football</label>
+        </div>
+
+        <div>
+            Adress:
+            <textarea id="comment" name="comment" rows="8" cols="20"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>        
+    </form>
+</body>
+</html>
