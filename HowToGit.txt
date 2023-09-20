@@ -1,3 +1,7 @@
+TO LOGIN ON A NEW VSCODE CLIENT
+	delete old windows credentials
+	in VSCode click person icon in bottom left> "Turn On Cloud Changes.." > sign in with git
+
 CREATING NEW REPO
 	(create repo in browser)
 	git init
