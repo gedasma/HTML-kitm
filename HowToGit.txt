@@ -6,6 +6,9 @@ CREATING NEW REPO
 	(create repo in browser)
 	git init
 
+UPDATING CODE FROM A REPO
+	git pull <repo> <branch>
+
 DOWNLOADING A REPO
 	git clone <repo link>
 
