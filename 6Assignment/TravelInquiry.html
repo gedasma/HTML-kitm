@@ -30,22 +30,20 @@
                 <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}">
             </div>
             <fieldset>
-                <div>
-                    <label for="buget">Budget: </label>
-                    <select name="budget" id="budget">
-                        <option value="100">100&euro; or lower</option>
-                        <option value="100-500">100&euro; - 500&euro;</option>
-                        <option value="500+">500&euro;+</option>
-                    </select>
+                <label for="buget">Budget: </label>
+                <select name="budget" id="budget">
+                    <option value="100">100&euro; or lower</option>
+                    <option value="100-500">100&euro; - 500&euro;</option>
+                    <option value="500+">500&euro;+</option>
+                </select>
                 <br>
-                    <label for="peopleAmount">Amount of people traveling: </label>
-                    <select name="peopleAmount" id="peopleAmount">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="34">3-4</option>
-                        <option value="5">5+</option>
-                    </select>
-                </div>
+                <label for="peopleAmount">Amount of people traveling: </label>
+                <select name="peopleAmount" id="peopleAmount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="34">3-4</option>
+                    <option value="5">5+</option>
+                </select>
             </fieldset>
             <div>
                 <label for="date">Start date:</label>
@@ -65,26 +63,24 @@
                 <label for="ot">Other</label>
                 <input type="checkbox" id="ot" name="language" value="ot">
             </div>
-            <div>
-                <fieldset>
-                    <legend>Apmokejimo būdas</legend>
-                    <input type="radio" id="debit" name="payment" value="debit">
-                    <label for="debit">Debitas</label><br>
-                    <input type="radio" id="credit" name="payment" value="credit">
-                    <label for="credit">Kreditas</label><br>
-                    <input type="radio" id="cash" name="payment" value="cash">
-                    <label for="cash">Grynieji</label><br>
-                    <input type="radio" id="loan" name="payment" value="loan">
-                    <label for="loan">Loan</label>
-                </fieldset>
-            </div>
 
-            <div>
-                <fieldset>
-                    <legend>Comment</legend>
-                    <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Aditional info..."></textarea>
-                </fieldset>
-            </div>
+            <fieldset>
+                <legend>Apmokejimo būdas</legend>
+                <input type="radio" id="debit" name="payment" value="debit">
+                <label for="debit">Debitas</label><br>
+                <input type="radio" id="credit" name="payment" value="credit">
+                <label for="credit">Kreditas</label><br>
+                <input type="radio" id="cash" name="payment" value="cash">
+                <label for="cash">Grynieji</label><br>
+                <input type="radio" id="loan" name="payment" value="loan">
+                <label for="loan">Loan</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Comment</legend>
+                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Aditional info..."></textarea>
+            </fieldset>
+            
             <div>
                 <button type="submit">Submit</button>
             </div>
