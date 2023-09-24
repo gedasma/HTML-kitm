@@ -12,7 +12,6 @@
         <a href="index.html"> <img src="travel-1800x600px.jpeg" width="500" alt="page logo"></a>
         <nav>
             <a href="LogInForm.html">Log in</a>
-            <a href="BlogPage.html">Blog</a>
         </nav>
         <br>
     </header> 
@@ -30,23 +29,24 @@
                 <label for="phone">Phone</label>
                 <input type="tel" name="phone" id="phone" required pattern="[0-9]{10}">
             </div>
-            <div>
-                <label for="buget">Budget: </label>
-                <select name="budget" id="budget">
-                    <option value="100">100&euro; or lower</option>
-                    <option value="100-500">100&euro; - 500&euro;</option>
-                    <option value="500+">500&euro;+</option>
-                </select>
-            </div>
-            <div>
-                <label for="peopleAmount">Amount of people traveling: </label>
-                <select name="peopleAmount" id="peopleAmount">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="34">3-4</option>
-                    <option value="5">5+</option>
-                </select>
-            </div>
+            <fieldset>
+                <div>
+                    <label for="buget">Budget: </label>
+                    <select name="budget" id="budget">
+                        <option value="100">100&euro; or lower</option>
+                        <option value="100-500">100&euro; - 500&euro;</option>
+                        <option value="500+">500&euro;+</option>
+                    </select>
+                <br>
+                    <label for="peopleAmount">Amount of people traveling: </label>
+                    <select name="peopleAmount" id="peopleAmount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="34">3-4</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+            </fieldset>
             <div>
                 <label for="date">Start date:</label>
                 <input type="date" id="date" name="date" required>
@@ -93,7 +93,7 @@
     <footer>
         <br>
         <address>
-            Contact us: <a href="mailto:webmaster@example.com">Here</a>.<br>
+            Contact us via email: <a href="mail@example.com">Here</a>.<br>
             StreetName 123, CityName<br>
             CountryName<br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.60539036261!2d23.92238027713179!3d54.89229585793903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7227bccea2565%3A0x29521e94a0849bb6!2sVytauto%20pr.%2C%20Kaunas%2C%20Kauno%20m.%20sav.!5e0!3m2!1sen!2slt!4v1695294642353!5m2!1sen!2slt" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
