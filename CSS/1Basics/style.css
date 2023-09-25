@@ -1,0 +1,26 @@
+@font-face {
+    font-family: KeniaFont;
+    src: url(Kenia-Regular.ttf);
+}
+
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    
+}
+
+h2 + p {
+    font-weight: bold;
+    word-break: break-all;
+}
+
+p {
+    font-size: 1.5rem;
+    color: red;
+    font-family: KeniaFont;
+}
+

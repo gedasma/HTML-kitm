@@ -1,0 +1,52 @@
+div.background
+{
+    background-color: lightgray;
+    padding: 10px;
+    color: red;
+    width: 600px;
+}
+.background > div
+{
+    margin: 10px;
+    width: 500px;
+}
+div.dotted
+{
+    border-style: dotted;
+    border-color: black;
+}
+div.dashed
+{
+    border-style: dashed;
+    border-color: black;
+}
+div.solid
+{
+    border-style: solid;
+    border-color: black;
+}
+div.double
+{
+    border-style: double;
+    border-color: black;
+}
+div.groove
+{
+    border-style: groove;
+    border-color: black;
+}
+div.ridge
+{
+    border-style: ridge;
+    border-color: black;
+}
+div.inset
+{
+    border-style:inset;
+    border-color: black;
+}
+div.outset
+{
+    border-style: outset;
+    border-color: black;
+}
