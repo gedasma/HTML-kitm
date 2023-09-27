@@ -1,0 +1,54 @@
+h1,
+h2 {
+  color: green;
+}
+
+strong,
+em {
+  color: yellowgreen;
+}
+
+.upper-list {
+  font-weight: bold;
+}
+
+.lower-list {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.lower-list li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.table table,
+th,
+td {
+  border: 1px solid;
+  border-color: black;
+}
+
+.table tbody td {
+  color: blueviolet;
+  font-weight: bold;
+}
+.table tbody td:nth-child(1) {
+  color: blue;
+  font-weight: bold;
+}
+.table thead td {
+  font-weight: bold;
+  color: black;
+}
+
+.form label,
+legend {
+  color: red;
+  font-weight: bold;
+}
