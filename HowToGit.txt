@@ -45,5 +45,8 @@ UPDATING TO A BRANCH
 
 DOWNLOADING A BRANCH
 
+CHANGE LOGIN
+	git config --global user.name “Your Name”
+
 
 Gediminas M
