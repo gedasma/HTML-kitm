@@ -1,23 +1,73 @@
-body {
+body ::before
+{
+  content: "";
   background-image: url("HQimage.jpg");
-  background-color: lightblue;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background-repeat: repeat;
   background-size: cover;
+  z-index: -1;
 }
 
-/* .container:hover + .hide { */
-.container {
-  background-image: url("nature-wallpaper.jpg");
+p::selection
+{
+  color: red;
+}
+
+.content
+{
+
+}
+.container{
   height: 10rem;
   width: 20rem;
-  margin-bottom: 1rem;
-  /* background-repeat: repeat; */
-  background-size: cover;
-  border-radius: 1rem;
+  margin: 2rem;
+ 
 }
-.hide {
+
+
+.container img{
+  
+  height: 10rem;
+  width: 20rem;
+  /* padding: 1rem; */
+  object-fit: cover;
+  border-radius: 1rem;
   display: none;
 }
-.container:hover {
+  
+.container:hover img {
   display: block;
+}
+
+.container:active{
+  /* border: 1rem solid red; */
+  outline: 1rem solid red; 
+}
+
+.card{
+  border: 5px solid red;
+  /* width: 55rem; */
+  clear: none;
+  padding: 15px; 
+  background: white;
+  display: flow-root;
+  float: left;
+  /* box-sizing: border-box; */
+}
+.card div{
+  float: left;
+}
+.right img{
+  height: 5rem;
+}
+.left {
+  clear: left;
+}
+.right {
+  float: right;
 }

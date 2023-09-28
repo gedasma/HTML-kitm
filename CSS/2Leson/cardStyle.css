@@ -1,0 +1,23 @@
+.card{
+    border: 5px solid red;
+    width: 25rem;
+    clear: none;
+    /* padding: 15px;  */
+    background: white;
+    /* display: flow-root; */
+    float: left;
+    /* box-sizing: border-box; */
+  }
+/* .card p{
+    clear: left;
+} */
+.text{
+    width: 200px;
+    float: left;
+}
+.card img{
+    margin: 1rem;
+    float:right;
+    height: 10rem;
+    object-fit: contain;
+}
