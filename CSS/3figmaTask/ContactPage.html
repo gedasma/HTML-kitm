@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ContactStyle.css" />
+</head>
+    
+    <div class="container">
+        <header>
+            <section>
+                <img src="Main Logo.png" alt="page image">
+                <nav>
+                    <a class="home" href="Home.html">Home+</a>
+                    <a href="About.html">About</a>
+                    <a href="Service.html">Service</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+            </section>
+        </header>
+        <body>
+            <section class="pageText">
+                <!-- <h3>Contact us</h3> -->
+                <h2>Contact service for our customers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.     Eius, dolorem. Vero commodi officiis itaque sit accusamus   beatae doloremque nulla blanditiis incidunt veritatis. Quam,  perspiciatis voluptates.</p>
+            </section>
+
+            <Section class="form">
+                <div class="image">
+                    <img src="Contact Animations.png" alt="page image">
+                </div>
+
+                <form action="SendMessage.html">
+                    <div>
+                        <label for="FirstName"></label>
+                        <input type="text" name="FirstName" id="FirstName"      required pattern="[a-zA-Z]+", placeholder="First name">
+                    </div>
+                    <div>
+                        <label for="LastName"></label>
+                        <input type="text" name="LastName" id="LastName"    required   pattern="[a-zA-Z]+", placeholder="Last  name">
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email"     required,   placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="Subject"></label>
+                        <input type="text" name="Subject" id="Subject"  required,    placeholder="Last name",    placehoder="Subject message">
+                    </div>
+                    <div>
+                        <textarea id="Inquiry" name="Inquiry" rows="8"  cols="20",   placeholder="Your inquiry here"> </textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </Section>
+
+            <footer>
+
+            </footer>
+        
+
+
+        </body>
+    </div>
+</html>
