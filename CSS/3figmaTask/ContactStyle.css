@@ -60,6 +60,9 @@ position: relative;
 
 /* form */
 
+.form{
+    height: 400px;
+}
 .form .image{
     width: 50%;
     float: left;
@@ -67,6 +70,7 @@ position: relative;
 .form form{
     float: right;
     width: 50%;
+    height: 100%;
 }
 .form div:first-child{
     display: inline-block;
@@ -76,7 +80,12 @@ position: relative;
     display: inline-block;
     width: 50%;
 }
-input, textarea{
+form div
+{
+    height: 20%;
+}
+
+.form input, textarea{
     width: 100%;
     height: 100%;
 }
