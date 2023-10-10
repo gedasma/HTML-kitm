@@ -1,0 +1,56 @@
+.container{
+    background-color: antiquewhite;
+    width: 60%;
+}
+
+.container-fluid{
+    background-color: aliceblue;
+}
+.box{
+    background-color:aquamarine ;
+    height: 300px;
+}
+.box > h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.row *{
+    color: red;
+}
+
+.row > .col{
+    margin: 0.5rem;
+    height: 5rem;
+
+}
+
+
+.firstRow > .col{
+    background-color: aquamarine;
+    border: solid;
+    border-color: red;
+    border-radius: 10px;
+    
+}
+
+.secondRow > .col{
+    background-color:beige;
+    border: solid;
+    border-color: brown;
+    border-radius: 10px;
+}
+
+
+.thirdRow > .col{
+    background-color:lightblue;
+    border: solid;
+    border-color:blue;
+    border-radius: 10px;
+}
+.thirdRow > .col > p{
+    color: blue;
+    margin: auto;
+}

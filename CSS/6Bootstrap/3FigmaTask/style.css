@@ -1,0 +1,17 @@
+.inputs{
+    background-color: #C1C6DF;
+    margin: 0;
+    padding: 0;
+}
+.inputs > .mb-3 {
+    margin: 0 !important;
+}
+
+.inputs > div{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.inputs > div > .form-control, .form-select {
+    border-radius: 0;
+  }
