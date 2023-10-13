@@ -5,13 +5,27 @@
 }
 
 /* header */
+
+.background{
+    background-image: url("../resources/background.png");
+    background-position: -110% 42%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.background > header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 header nav ul{
     flex:auto;
     justify-content: space-between;
 }
 
 header > .bg-body-tertiary {
-    background-color: white !important;
+    background-color: inherit !important;
 }
 
 header .sideButton{
@@ -43,18 +57,21 @@ header .centerButton{
 
 
 body > .container{
-    background-color: beige;
-    padding-top: 1rem;
     max-width: 1440px;
+    padding: 0;
 }
 
 /* main */
 
 /* hero section */
 
-.hero .elements{
-    display: flex;
-    justify-content: space-between;
+.hero > .container > .row{
+    padding-left: 8.75rem;
+    padding-right: 10.1875rem;
+}
+
+.hero > .container > .row > .col{
+    padding: 0;
 }
 
 .hero .Text > h1{
@@ -65,10 +82,14 @@ body > .container{
     font-weight: 800;
     line-height: 113.333%;
     letter-spacing: -0.1rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
 }
+
 .hero .Text > h1 > span{
     color: var(--healing-green-50, #84CC16);
 }
+
 .hero p{
     color: var(--osler-gray-60, #647067);
     font-family: Nunito;
@@ -78,13 +99,65 @@ body > .container{
     line-height: 160%; /* 38.4px */
     letter-spacing: -0,015rem;
 }
-.hero .elements > h2{
+
+.hero .elements{
+    display: flex;
+    justify-content: flex-start;
+    margin: 2.5rem 0;
+}
+
+.hero .textAndIcon{
+    display: flex;
+}
+
+.hero .elements > :first-child{
+    margin-right: 3rem;
+}
+
+.hero .textAndIcon > h5{
     color: var(--osler-gray-60, #647067);
     font-family: Nunito;
-    font-size: 0,875rem;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    letter-spacing: 0,0875rem;
+    letter-spacing: 0.0875rem;
     text-transform: uppercase;
+    padding-left: 0.5rem;
+    margin: auto;
+}
+
+.hero .downloadAppButton{
+    border-radius: 1.5rem;
+    background: var(--osler-gray-80, #2F3C33);
+    display: flex;
+    height: 4rem;
+    width: 16.625rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .downloadAppButton > h4{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+/* phone */
+
+.hero .phone{
+    height: 58.6875rem;
+}
+.hero .phone > img{
+    width: 100%;
+    /* max-width: 100%; */
+    object-fit: contain;
+
 }
