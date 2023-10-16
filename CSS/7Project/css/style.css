@@ -1,22 +1,45 @@
-
 @font-face{
     font-family: Nunito;
     src: url(../resources/Nunito.ttf);
 }
 
+:root{
+    --osler-gray-white: #FFF;
+    --healing-green-50: #84CC16;
+    --osler-gray-80: #2F3C33;
+    --osler-gray-60: #647067;
+}
+
+a:link, a:visited { color: inherit; text-decoration: none; }
+
+.row{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body > .container-fluid{
+    padding: 0;
+}
+
+body > .container-fluid > .row{
+    margin: 0;
+}
+
+
 /* header */
 
 .background{
-    background-image: url("../resources/background.png");
-    background-position: -110% 42%;
-    background-size: 120%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, #FFF 100%), url("../resources/background.png");
+    /* background-image: url("../resources/background.png"); */
+    background-position: 37% 150%;
+    background-size: 250%;
     background-repeat: no-repeat;
 }
 
 .background > header{
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    /* padding: 0; */
+    margin: auto;
+    /* width: 100%; */
 }
 
 header nav ul{
@@ -29,61 +52,86 @@ header > .bg-body-tertiary {
 }
 
 header .sideButton{
-    border-radius: 30px;
+    
     background: var(--osler-gray-white, #FFF);
     box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
-
+    border-radius: 24px;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
     display: flex;
-    width: 80px;
-    height: 80px;
-    padding: 28px;
+    
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
 }
+
+
 header .centerButton{
-    border-radius: 30px;
     background: var(--healing-green-50, #84CC16);
     box-shadow: 0px 16px 32px 0px rgba(132, 204, 22, 0.25);
+    border-radius: 24px;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
 
     display: flex;
-    width: 80px;
-    height: 80px;
-    padding: 22px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
 }
 
-
-body > .container{
-    max-width: 1440px;
-    padding: 0;
+@media(min-width: 1200px){
+    header .sideButton, header .centerButton{
+        border-radius: 30px;
+        width: 80px;
+        height: 80px;
+        padding: 22px;
+    }
 }
 
 /* main */
 
 /* hero section */
 
+.hero{
+    padding: 0 1rem;
+}
+
+.hero > .container{
+    padding: 0;
+}
+
 .hero > .container > .row{
-    padding-left: 8.75rem;
-    padding-right: 10.1875rem;
+    max-width: 100%;
+    margin: 0;
 }
 
 .hero > .container > .row > .col{
     padding: 0;
 }
 
+.hero .Text{
+    padding: 0;
+}
+
+.hero .Text{
+    display: flex;
+    flex-direction: column;
+}
+
 .hero .Text > h1{
     color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
     font-family: Nunito;
-    font-size: 3.75rem;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 113.333%;
-    letter-spacing: -0.1rem;
-    margin-top: 5rem;
-    margin-bottom: 1.5rem;
+    line-height: 122.222%;
+    letter-spacing: 0.0675rem;
+
+    margin-top: 4rem;
+    margin-bottom: 1rem;
 }
 
 .hero .Text > h1 > span{
@@ -92,26 +140,26 @@ body > .container{
 
 .hero p{
     color: var(--osler-gray-60, #647067);
+    text-align: center;
     font-family: Nunito;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 38.4px */
-    letter-spacing: -0,015rem;
+    line-height: 160%;
+    letter-spacing: -0.01125rem;
+    margin-bottom: 0;
 }
 
 .hero .elements{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
 }
 
 .hero .textAndIcon{
     display: flex;
-}
-
-.hero .elements > :first-child{
-    margin-right: 3rem;
+    justify-content: center;
 }
 
 .hero .textAndIcon > h5{
@@ -124,21 +172,23 @@ body > .container{
     letter-spacing: 0.0875rem;
     text-transform: uppercase;
     padding-left: 0.5rem;
-    margin: auto;
+    margin: auto 0;
 }
 
 .hero .downloadAppButton{
-    border-radius: 1.5rem;
+    border-radius: 24px;
     background: var(--osler-gray-80, #2F3C33);
-    display: flex;
-    height: 4rem;
-    width: 16.625rem;
+    margin-bottom: 5.625rem;
+}
+
+.hero .downloadAppButton > a{
     padding: 1rem 2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero .downloadAppButton > h4{
+.hero .downloadAppButton > a > h4{
     color: var(--osler-gray-white, #FFF);
     font-family: Nunito;
     font-size: 1.125rem;
@@ -152,12 +202,251 @@ body > .container{
 
 /* phone */
 
-.hero .phone{
-    height: 58.6875rem;
+.hero .Phone{
+    height: 34rem;
+    width: 16.125rem;
+    margin: 0 auto;
+    position: relative;
 }
-.hero .phone > img{
+.hero .phoneImage > .gradient{
+    display: none;
+}
+.hero .phoneImage > img{
     width: 100%;
+    height: 100%;
     /* max-width: 100%; */
     object-fit: contain;
+}
+.heartRateCard{
+    border-radius: 22.333px;
+    background: var(--healing-green-50, #84CC16);
+    box-shadow: 0px 11.16667px 22.33333px 0px rgba(132, 204, 22, 0.25);
+    height: 9.6875rem;
+    width: 6.8125rem;
+    padding: 0.6975rem;
 
+    position: absolute;
+    top: 15%;
+    left: 75%;
+}
+.nutritionCard{
+    border-radius: 22.333px;
+    background: var(--osler-gray-white, #FFF);
+    display: flex;
+    height: 9.6875rem;
+    width: 6.9375rem;
+    padding: 0.6975rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.979px;
+
+    position: absolute;
+    top: 37%;
+    left: -10%;
+}
+.doctorSugetionCard{
+    display: none;
+}
+
+
+.hero .scrollDownButton{
+    display: none;
+}
+
+
+
+@media(min-width: 1200px){
+    .background{
+        background-position: -60% 55%;
+        background-size: 130%;
+    }
+    .hero .Text > h1{
+        text-align: left;
+        font-size: 3.75rem;
+        line-height: 113.333%;
+        letter-spacing: -0.1rem;
+        margin-top: 5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero p{
+        text-align: left;
+        font-family: Nunito;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: -0,015rem;
+    }
+
+    .hero .elements{
+        flex-direction: row;
+        margin: 2.5rem 0;
+    }
+
+    .hero .elements > :first-child{
+        margin-right: 2.5rem;
+    }
+
+    .hero .textAndIcon{
+        justify-content: flex-start;
+    }
+
+    .hero .downloadAppButton{
+        max-width: max-content;
+    }
+
+    .hero .Phone{
+        height: 48rem;
+        width: 28.375rem;
+        margin: 0;
+    }
+
+    .hero .phoneImage > .gradient{
+        display: block;
+        background: linear-gradient(to top, white 10%, transparent 20%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+    }
+
+    .hero .phoneImage > img{
+        height: auto;
+        
+    }
+
+    .heartRateCard{
+        border-radius: 32px;
+        height: 12.5rem;
+        width: 9.7rem;
+    
+        top: 25%;
+        left: 80%;
+    }
+    .nutritionCard{
+        border-radius: 32px;
+        height: 12.5rem;
+        width: 9.7rem;
+
+        top: 55%;
+        left: 80%;
+    }
+    .doctorSugetionCard{
+        display: block;
+        border-radius: 32px;
+        background: var(--osler-gray-white, #FFF);
+        display: flex;
+        height: 7rem;
+        width: 21.4375rem;
+        padding: 0.75rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6.979px;
+
+        position: absolute;
+        top: 59.5%;
+        left: -20%;
+    }
+
+    .hero .scrollDownButton{
+        display: block;
+        border-radius: 12px;
+        background: var(--osler-gray-10, #F5F5F5);
+        max-width: max-content;
+        padding: 0;
+        margin-left: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero .scrollDownButton > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+    }
+    .hero .scrollDownButton h4{
+        color: var(--osler-gray-80, #2F3C33);
+        font-family: Nunito;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.075rem;
+        text-transform: uppercase;
+        margin: 0;
+        padding-right: 1rem;
+    }
+
+    
+}
+
+/* mission */
+
+.mission{
+    padding: 0.5rem 1rem;
+    
+}
+.missionText{
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 96px;
+    background: var(--osler-gray-80, #2F3C33);
+    z-index: 2;
+}
+
+.missionText > h2{
+    border-radius: 15px;
+    background: var(--healing-green-50, #84CC16);
+    padding: 0.625rem 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    max-width: max-content;
+}
+.missionText > h3{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 126.667%;
+    letter-spacing: 0.05625rem;
+    margin-bottom: 1.5rem;
+}
+.missionText > p{
+    color: var(--osler-gray-20, #E3E4E3);
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.01125rem;
+}
+
+@media(min-width: 1200px){
+    .missionText{
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+    .missionText > h2, .missionText > p{
+        flex: 1;
+        margin: 0;
+    }
+    .missionText > h2{
+        /* order: -2; */
+        flex: 1;
+    }
+    .missionText > p{
+        /* order: -1; */
+        flex: 1;
+
+    }
+    .missionText > h3{
+        flex: 0 0 auto;
+    }
 }
