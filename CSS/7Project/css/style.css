@@ -535,7 +535,7 @@ header .centerButton{
     font-weight: 800;
     line-height: 122.222%;
     letter-spacing: -0,0675rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .statisticsContent{
     padding: 6rem 1rem;
@@ -545,14 +545,14 @@ header .centerButton{
     background: var(--osler-gray-white, #FFF);
     box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
     padding: 4rem 2rem;
-    margin-top: 1rem;
-    max-width: max-content;
-    max-height: max-content;
 }
 .statisticsContent > div{
     display: flex;
     flex-direction: column;
-    /* align-items: stretch; */
+    gap: 1rem;
+}
+.statisticsElement > div{
+    display: flex;
 }
 .statisticsElement > h3{
     color: var(--osler-gray-80, #2F3C33);
@@ -590,8 +590,9 @@ header .centerButton{
     .statisticsContent > div{
         flex-direction: row;
         justify-content: center;
+        
     }
-    .statisticsBox > h2{
+    .statisticsContent > h2{
         font-size: 3rem;
         line-height: 116.667%;
         letter-spacing: -0.09rem;
@@ -599,6 +600,7 @@ header .centerButton{
     }
     .statisticsElement{
         padding: 3rem;
+       
     }
 
 }
