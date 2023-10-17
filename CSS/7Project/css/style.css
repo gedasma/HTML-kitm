@@ -25,7 +25,15 @@ body > .container-fluid > .row{
     margin: 0;
 }
 
+main > section{
+    padding: 0.5rem 1rem;
+}
 
+@media(min-width: 1200px){
+    main > section{
+        padding: 0.75rem 1.5rem;
+    }
+}
 /* header */
 
 .background{
@@ -384,7 +392,7 @@ header .centerButton{
 /* mission */
 
 .mission{
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
     position: relative;
     z-index: 2;
 }
@@ -472,6 +480,7 @@ header .centerButton{
 @media(min-width: 1200px){
     .missionBox{
         padding: 8rem 7.375rem;
+        border-radius: 180px; 
     }
     .missionText{
         flex-direction: row;
@@ -502,6 +511,94 @@ header .centerButton{
     }
     .missionText > div:nth-of-type(1){
         width: 32.25rem;
+    }
+}
+
+/* statistics */
+
+.statisticsBorder{
+    
+    border-radius: 96px;
+    background: var(--healing-green-50, #84CC16);
+}
+
+.statisticsBorder > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.statisticsContent > h2{
+    color: var(--osler-gray-white, #FFF);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 122.222%;
+    letter-spacing: -0,0675rem;
+    margin-bottom: 1rem;
+}
+.statisticsContent{
+    padding: 6rem 1rem;
+}
+.statisticsElement{
+    border-radius: 64px;
+    background: var(--osler-gray-white, #FFF);
+    box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
+    padding: 4rem 2rem;
+    margin-top: 1rem;
+    max-width: max-content;
+    max-height: max-content;
+}
+.statisticsContent > div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+}
+.statisticsElement > h3{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 111.111%;
+    letter-spacing: -0.135rem;
+}
+.statisticsElement > h3 > span{
+    color: var(--healing-green-50, #84CC16); 
+}
+
+.statisticsElement h4{
+    color: var(--osler-gray-80, #2F3C33);
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 133.333%;
+    letter-spacing: -0.045rem;
+    padding-left: 0.5rem;
+}
+
+@media(min-width: 1200px){
+    .statisticsBorder{
+        border-radius: 180px;
+    }
+
+    .statisticsContent{
+        padding: 8rem 7.375rem;
+        border-radius: 180px;
+    }
+    .statisticsContent > div{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .statisticsBox > h2{
+        font-size: 3rem;
+        line-height: 116.667%;
+        letter-spacing: -0.09rem;
+        margin-bottom: 4rem;
+    }
+    .statisticsElement{
+        padding: 3rem;
     }
 
 }
