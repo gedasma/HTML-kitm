@@ -602,5 +602,160 @@ header .centerButton{
         padding: 3rem;
        
     }
+}
 
+/* Services */
+.servicesBorder{
+    border-radius: 96px;
+    background: var(--osler-gray-10, #F5F5F5);
+    
+}
+.servicesContainer{
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+.servicesHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.servicesHeader > div {
+    border-radius: 15px;
+    border: 1px solid var(--osler-gray-60, #647067);
+    padding: 0.625rem 1rem;
+    max-width: max-content;
+    max-height: max-content;
+}
+.servicesHeader > div > h4{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    margin: 0;
+}
+.servicesHeader > h2{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 122.222%;
+    letter-spacing: -0.0675rem;
+    margin: 0;
+}
+.servicesCards{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+.servicesElement > a{
+    border-radius: 56px;
+    background: var(--osler-gray-white, #FFF);
+    box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+.servicesElement .arrow{
+    align-self: flex-end;
+}
+.servicesElement .elementContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+.servicesElement .elementContent > .icon{
+    border-radius: 30px;
+    background: var(--healing-green-10, #ECFCCB);
+    display: flex;
+    width: min-content;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.servicesElement .elementContent > .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.services .servicesButton{
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+    max-width: max-content;
+}
+
+.services .servicesButton > a{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .servicesButton > a > h4{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    margin: 0;
+    padding-right: 1rem;
+}
+@media(min-width: 1200px){
+    .servicesBorder{
+        border-radius: 180px;
+    }
+    .servicesContainer{
+        padding: 8rem 14.75rem;
+        gap: 3rem;
+    }
+    .servicesHeader{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .servicesHeader > h2{
+        order: -1;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 116.667%;
+        letter-spacing: -0.09rem;
+    }
+    .servicesElement > a{
+        flex-direction: row;
+        align-items: center;
+    }
+    .servicesElement > a > h4{
+        padding-right: 1rem;
+    }
+    .servicesElement .elementContent{
+        flex-direction: row;
+    }
+    .servicesElement .elementContent > .text{
+        gap: 0;
+        justify-content: center;
+    }
+    .servicesElement .elementContent > .text > h3, p{
+        margin: 0;
+    }
+    .servicesElement .arrow{
+        align-self: auto;
+    }
 }
