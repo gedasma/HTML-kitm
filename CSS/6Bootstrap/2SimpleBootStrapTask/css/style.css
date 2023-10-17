@@ -1,0 +1,30 @@
+.container{
+    background-color: bisque;
+}
+
+header > .bg-body-tertiary{
+    background-color: purple !important;
+    /* color: white; */
+}
+
+
+header .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+  }
+
+header .nav-link {
+    color: white;
+  }
+
+  .btn-outline-success {
+    --bs-btn-color: white;
+    --bs-btn-hover-color: purple;
+    --bs-btn-hover-bg: white;
+    --bs-gradient: none;
+  }
+
+.btn {
+    color: white;
+    border: none;
+    background-color: lime;
+}

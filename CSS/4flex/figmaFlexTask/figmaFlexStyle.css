@@ -1,0 +1,289 @@
+@font-face{
+    font-family: Roboto;
+    src: url(resources/Roboto.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 94%;
+    margin: 3%;
+    background-color: #F2F9FF;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body::before {
+    content: "";
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    float: right;
+    border-radius: 50px;
+}
+
+a:link, a:visited { color: inherit; text-decoration: none; }
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > h1{
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* nav */
+header > ul{
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: auto;
+}
+
+header > ul > li{
+    list-style: none;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    position: relative
+}
+
+ header > ul > li::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 33%;
+    width: 33%;
+    height: 2px;
+    background-color: #05B4FF;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+
+header > ul > li:hover::after{
+    transform: scaleX(1);
+}
+
+/* buttons */
+.buttons{  
+    display: flex;
+    justify-content:flex-end;
+    width: 17%;
+    height: 80%;
+    align-items: center;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2B2B2B;
+    border-radius: 15px 5px 15px 15px;
+    height: 100%;
+    aspect-ratio: 3/1;
+}
+
+.cart > p{
+    color: white;
+    margin: auto;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cart > p:nth-child(2) {
+    
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #525252;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+.cart:hover{
+    background-color: blue;
+}
+
+.menu{
+    background-color: #05B4FF;
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 5px 15px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+
+/* main */
+
+main{
+    display: flex;
+    margin-left: 4%;
+}
+
+.largeImage{
+    flex: 1.8;
+    margin-right: 2%;
+}
+.largeImage > img{
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 26px 50px 50px 50px;
+}
+.content{
+    flex: 3;
+}
+.content > h2{
+    font-family: Roboto;
+    font-size: 4.2rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.content > p{
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #969696;
+}
+
+.content > h3{
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* offers */
+.offers{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.offers > div {
+    border-radius: 10px;
+    box-shadow: 0 0 30px 1px lightblue;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.offers > div:hover {
+    box-shadow: 0 0 20px 10px lightblue;
+}
+
+.primaryOffer, .simpleOffer {
+    display: flex;
+    margin-left: 2.5%;
+    padding: 1%;
+}
+
+.offerImage {
+    margin: auto;
+}
+
+.offerDetails > *{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+}
+
+.offerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+}
+
+.offerDetails > h4, .price{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.offerDetails > p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.price > h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #43C7FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.shopIcon {
+    margin: auto;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contacts{
+    width: 25%;
+    display: flex;
+    list-style: none;
+    font-family: Roboto;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialData{
+    display: flex;
+}
+
+.icon{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.icon > img{
+    object-fit:contain;
+    max-width: 100%;
+}
+
+.socialData > p{
+    font-family: Roboto;
+    font-size: 1.3REM;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}

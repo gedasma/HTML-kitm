@@ -1,0 +1,78 @@
+
+html{
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 0.5rem;
+}
+body{
+    height: 100%;
+}
+header{
+    background-color: #00ffff;
+}
+h1, h2, p{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.mainContent{
+    display: flex;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.side > div{
+    background-color: purple;
+    flex: 4;
+    
+}
+.side > aside{
+    background-color: greenyellow;
+    flex: 6;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 0.5rem;
+}
+
+main{
+    background-color: yellow;
+    flex: 3;
+}
+
+.extra{
+    background-color: gray;
+    flex: 1;
+}
+
+.bottom{
+    display: flex;
+    gap: 0.5rem;
+}
+.images{
+    background-color: darkcyan;
+    flex: 5;
+}
+.posts{
+    background-color: pink;
+    flex: 1;
+}
+footer{
+    background-color: orange;
+}
