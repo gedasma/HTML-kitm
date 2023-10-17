@@ -385,31 +385,42 @@ header .centerButton{
 
 .mission{
     padding: 0.5rem 1rem;
-    
+    position: relative;
+    z-index: 2;
 }
-.missionText{
+.missionBox{
     padding: 6rem 1rem;
+    border-radius: 96px;
+    background: var(--osler-gray-80, #2F3C33);
+    overflow: hidden;
+}
+
+.missionText{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 96px;
-    background: var(--osler-gray-80, #2F3C33);
-    z-index: 2;
 }
 
-.missionText > h2{
+.missionText > div > div{
     border-radius: 15px;
     background: var(--healing-green-50, #84CC16);
     padding: 0.625rem 1rem;
     margin-bottom: 1.5rem;
+    max-width: max-content;
+    max-height: max-content;
+}
+
+.missionText h2{
+    
     color: var(--osler-gray-white, #FFF);
     font-family: Nunito;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: -0.02rem;
-    max-width: max-content;
+    margin: 0;
+    
 }
-.missionText > h3{
+.missionText h3{
     color: var(--osler-gray-white, #FFF);
     font-family: Nunito;
     font-size: 1.8rem;
@@ -418,7 +429,7 @@ header .centerButton{
     letter-spacing: 0.05625rem;
     margin-bottom: 1.5rem;
 }
-.missionText > p{
+.missionText p{
     color: var(--osler-gray-20, #E3E4E3);
     font-family: Nunito;
     font-size: 1.125rem;
@@ -426,27 +437,71 @@ header .centerButton{
     line-height: 160%;
     letter-spacing: -0.01125rem;
 }
+.missionText > div:nth-of-type(2) > div
+{
+    display: none;
+}
+
+.missionBox .icons{
+    display: flex;
+    justify-content: center;
+}
+
+.missionBox .icons:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+}
+
+.missionBox .icons > div{
+    margin:  0 0 1.5rem 1.5rem;
+    padding: 3.25rem 1.5625rem;
+}
+
+
+
+.missionBox .icons > div:hover{
+    border-radius: 56px;
+    background: var(--osler-gray-70, #48524B);
+    
+}
+.missionBox .icons > div:hover > img{
+    filter: brightness(100);
+}
+
 
 @media(min-width: 1200px){
+    .missionBox{
+        padding: 8rem 7.375rem;
+    }
     .missionText{
-        /* flex-wrap: wrap; */
         flex-direction: row;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
-    .missionText > h2, .missionText > p{
-        flex: 1;
-        margin: 0;
+    .missionText p{
+        font-size: 1.25rem;
+        letter-spacing: -0,0125rem;
     }
-    .missionText > h2{
+    .missionText h2{
         /* order: -2; */
-        flex: 1;
+        flex: 0 0 50%;
     }
-    .missionText > p{
-        /* order: -1; */
-        flex: 1;
+    .missionText h3{
+        font-size: 3rem;
+        line-height: 116.667%;
+        letter-spacing: -0.09rem; 
+    }
+    .missionText > div:nth-of-type(2) > div{
+        display: block;
+    }
+    .missionText > div:nth-of-type(1) > div{
+        display: none;
+    }
+    .missionText > div:nth-of-type(2){
+        order: -1;
+        width: 28rem;
+    }
+    .missionText > div:nth-of-type(1){
+        width: 32.25rem;
+    }
 
-    }
-    .missionText > h3{
-        flex: 0 0 auto;
-    }
 }
