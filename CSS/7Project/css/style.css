@@ -29,6 +29,10 @@ main > section{
     padding: 0.5rem 1rem;
 }
 
+h1 ,h2, h3, h4 ,h5, h6{
+    margin: 0;
+}
+
 @media(min-width: 1200px){
     main > section{
         padding: 0.75rem 1.5rem;
@@ -759,3 +763,260 @@ header .centerButton{
         align-self: auto;
     }
 }
+
+/* features */
+.features{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.features > .container{
+    padding: 0;
+}
+
+.features h2{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 113.333%;
+    letter-spacing: -0.0675rem;
+    margin-bottom: 3rem;
+}
+.features .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6rem;
+}
+.features .content > .featureCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.features .cardBorder{
+    border-radius: 118px;
+    background: var(--healing-green-50, #84CC16);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.features .cardBorder > img{
+    width: 100%;
+}
+.features .cardContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.features .featureHeadline{
+    border-radius: 0.9375rem;
+    border: 1px solid var(--osler-gray-60, #647067);
+    display: flex;
+    padding: 0.625rem 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.features .featureHeadline > h3{
+    color: var(--osler-gray-60, #647067);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+.featureInformation > h4{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 126.667%;
+    letter-spacing: -0.05625rem;
+    padding-bottom: 1rem;
+}
+.featureInformation > p{
+    color: var(--osler-gray-60, #647067);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.01rem;
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+.featureCard:nth-child(1) .featureInformation > p{
+    padding-bottom: 2rem;
+}
+.featureInformation > .stats1{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.featureInformation > .stats1 > .text > h5{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 133.333%;
+    letter-spacing: -0.045rem;
+}
+.featureInformation > .stats1 > .text > h5 > span{
+    color: var(--remote-red-50, #F43F5E);
+}
+.featureInformation > .stats1 > .text > h6{
+    color: var(--osler-gray-60, #647067);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+
+.featureCard:nth-child(2) > .cardBorder{
+    background: var(--osler-gray-60, #647067);
+}
+.featureInformation > .stats2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+}
+.featureInformation > .stats2 > .text > h5{
+    color: var(--osler-gray-80, #2F3C33);
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.025rem;
+}
+.featureInformation > .stats2 > .text > h5 > span{
+    color: var(--osler-gray-60, #647067);
+}
+.featureInformation > .stats2 > h6{
+    color: var(--osler-gray-60, #647067);
+    text-align: right;
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 900;
+    letter-spacing: 0.0875rem;
+    text-transform: uppercase;
+}
+.featureInformation .progress{
+    --bs-progress-height: 0.5rem;
+    border-radius: 3px;
+    --bs-progress-bg: var(--healing-green-10, #ECFCCB);
+    
+}
+.featureInformation .bg-success {
+    background: var(--healing-green-50, #84CC16) !important;
+}
+
+.featureCard:nth-child(3) > .cardBorder{
+    background: var(--osler-gray-20, #E3E4E3);
+}
+.featureInformation > .stats3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.featureInformation > .stats3 > .bulletPoint{
+    display: flex;
+    gap: 0.5rem;
+}
+.featureInformation > .stats3 > .bulletPoint > h5{
+    color: var(--osler-gray-70, #48524B);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.02rem;
+}
+
+.featureGetButton{
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+}
+.featureGetButton > a{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.featureGetButton > a > h4{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+
+@media(min-width: 1200px){
+    .features{
+        padding: 8rem 10.9375rem;
+    }
+    
+    .features h2{
+        font-size: 3.75rem;
+        line-height: 113.333%;
+        letter-spacing: -0.1125rem;
+        margin-bottom: 6rem;
+    }
+
+    .features .content > .featureCard{
+        flex-direction: row;
+        gap: 11.25rem;
+    }
+    .features .featureCard:nth-child(1) > .cardBorder,
+    .features .featureCard:nth-child(3) > .cardBorder{
+        order: 2;
+    }
+    .features .cardContent{
+        align-items: flex-start;
+        gap: 2.5rem;
+        max-width: 40%;
+    }
+    .featureInformation > h4{
+        text-align: left;
+        font-size: 3rem;
+        letter-spacing: -0.09rem;
+        padding-bottom: 1.5rem;
+    }
+    .featureInformation > p{
+        text-align: left;
+        font-size: 1.5rem;
+        letter-spacing: -0.01125rem;
+        padding-bottom: 2rem;
+    }
+    .featureInformation > .stats1 {
+        display: flex;
+    }
+    .featureInformation > .stats1 > .text{
+        flex: 1;
+    }
+    .featureInformation > .stats1 > .text > h5{
+        text-align: left;
+        font-size: 1.875rem;
+        letter-spacing: -0.05625rem;
+    }
+    .featureInformation > .stats1 > .text > h6{
+        text-align: left;
+        font-size: 1.125rem;
+        letter-spacing: -0.0225rem;
+    }
+    .featureInformation > .stats3{
+        align-items: flex-start;
+    }
+}
+
