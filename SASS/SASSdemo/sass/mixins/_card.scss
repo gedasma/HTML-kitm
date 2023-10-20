@@ -1,0 +1,6 @@
+@mixin card($width, $radius, $padding, $margin){
+    width: $width;
+    border-radius: $radius;
+    padding: $padding;
+    margin: $margin;
+}

@@ -1,0 +1,10 @@
+@mixin button($backgroundColor, $textColor, $roundness){
+    background-color: $backgroundColor;
+    border-radius: $roundness;
+    a{
+        text-decoration: none;
+    }
+    h3{
+        color: $textColor;
+     }
+}

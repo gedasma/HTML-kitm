@@ -1,0 +1,36 @@
+@import "var";
+@import "button";
+@import "mixins/card";
+body{
+    background-color: beige;
+}
+
+nav{
+    background-color: $navBackground;
+    border-radius: $roundness;
+    ul{
+        @include card(300px, 20px, 10px, 100px);
+        
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-around;
+        li{
+            // padding: $buttonSize;
+            // border-radius: $roundness;
+            // background-color: bisque;
+            // &:hover{
+            //     background-color: cadetblue;
+            // }
+            list-style: none;
+            a{
+                color: black;
+                text-decoration: none;
+                @extend .button;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        
+    }
+}

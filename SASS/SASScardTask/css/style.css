@@ -1,0 +1,46 @@
+body {
+  background-color: pink; }
+
+.card {
+  display: flex;
+  flex-direction: column; }
+  .card .card-header {
+    width: 600px;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center; }
+    .card .card-header .card-header-image {
+      height: 100px;
+      margin: auto; }
+      .card .card-header .card-header-image img {
+        max-width: 100%;
+        max-height: 100%; }
+    .card .card-header .card-header-exit {
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: white; }
+      .card .card-header .card-header-exit h6 {
+        text-align: center;
+        margin: 0;
+        margin-top: 0.3rem; }
+  .card .card-content h2, .card .card-content p {
+    text-align: center; }
+  .card .card-content .card-content-buttons .button1 {
+    background-color: red;
+    border-radius: 10px; }
+    .card .card-content .card-content-buttons .button1 a {
+      text-decoration: none; }
+    .card .card-content .card-content-buttons .button1 h3 {
+      color: white; }
+  .card .card-content .card-content-buttons .button2 {
+    background-color: white;
+    border-radius: 10px; }
+    .card .card-content .card-content-buttons .button2 a {
+      text-decoration: none; }
+    .card .card-content .card-content-buttons .button2 h3 {
+      color: red; }
+
+/*# sourceMappingURL=style.css.map */
