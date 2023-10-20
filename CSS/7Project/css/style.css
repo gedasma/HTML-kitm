@@ -773,7 +773,8 @@ header .centerButton{
     overflow: hidden;
 }
 .features .cardBorder > img{
-    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 .features .cardContent{
     display: flex;
@@ -907,7 +908,7 @@ header .centerButton{
 }
 
 @media(min-width: 1200px){
-    .features{
+    .content > .features{
         padding: 8rem 10.9375rem;
     }
     
