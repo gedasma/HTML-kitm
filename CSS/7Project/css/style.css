@@ -25,7 +25,7 @@ body > .container-fluid > .row{
     margin: 0;
 }
 
-main > section{
+.content > section{
     padding: 0.5rem 1rem;
 }
 
@@ -33,8 +33,36 @@ h1 ,h2, h3, h4 ,h5, h6{
     margin: 0;
 }
 
+.getFeatureButton{
+    border-radius: 24px;
+    background: var(--osler-gray-80, #2F3C33);
+}
+
+.getFeatureButton > a{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.getFeatureButton > a > h4{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.0225rem;
+    margin: 0;
+    padding-right: 1rem;
+}
+.getFeatureButton:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px darkgray;
+}
+
 @media(min-width: 1200px){
-    main > section{
+    .content > section{
         padding: 0.75rem 1.5rem;
     }
 }
@@ -101,8 +129,6 @@ header .centerButton{
         padding: 22px;
     }
 }
-
-/* main */
 
 /* hero section */
 
@@ -187,31 +213,6 @@ header .centerButton{
     margin: auto 0;
 }
 
-.hero .downloadAppButton{
-    border-radius: 24px;
-    background: var(--osler-gray-80, #2F3C33);
-    margin-bottom: 5.625rem;
-}
-
-.hero .downloadAppButton > a{
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .downloadAppButton > a > h4{
-    color: var(--osler-gray-white, #FFF);
-    font-family: Nunito;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.0225rem;
-    margin: 0;
-    padding-right: 1rem;
-}
-
 /* phone */
 
 .hero .Phone{
@@ -260,12 +261,13 @@ header .centerButton{
     display: none;
 }
 
+.hero .getFeatureButton{
+    margin-bottom: 5.625rem;
+}
 
 .hero .scrollDownButton{
     display: none;
 }
-
-
 
 @media(min-width: 1200px){
     .background{
@@ -304,7 +306,7 @@ header .centerButton{
         justify-content: flex-start;
     }
 
-    .hero .downloadAppButton{
+    .hero .getFeatureButton{
         max-width: max-content;
     }
 
@@ -389,14 +391,11 @@ header .centerButton{
         margin: 0;
         padding-right: 1rem;
     }
-
-    
 }
 
 /* mission */
 
 .mission{
-    /* padding: 0.5rem 1rem; */
     position: relative;
     z-index: 2;
 }
@@ -453,33 +452,25 @@ header .centerButton{
 {
     display: none;
 }
-
 .missionBox .icons{
     display: flex;
     justify-content: center;
 }
-
 .missionBox .icons:nth-of-type(3){
     display: flex;
     justify-content: center;
 }
-
 .missionBox .icons > div{
     margin:  0 0 1.5rem 1.5rem;
     padding: 3.25rem 1.5625rem;
 }
-
-
-
 .missionBox .icons > div:hover{
     border-radius: 56px;
     background: var(--osler-gray-70, #48524B);
-    
 }
 .missionBox .icons > div:hover > img{
     filter: brightness(100);
 }
-
 
 @media(min-width: 1200px){
     .missionBox{
@@ -495,7 +486,6 @@ header .centerButton{
         letter-spacing: -0,0125rem;
     }
     .missionText h2{
-        /* order: -2; */
         flex: 0 0 50%;
     }
     .missionText h3{
@@ -697,30 +687,6 @@ header .centerButton{
     align-self: stretch;
 }
 
-.services .servicesButton{
-    border-radius: 24px;
-    background: var(--osler-gray-80, #2F3C33);
-    max-width: max-content;
-}
-
-.services .servicesButton > a{
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.services .servicesButton > a > h4{
-    color: var(--osler-gray-white, #FFF);
-    font-family: Nunito;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.0225rem;
-    margin: 0;
-    padding-right: 1rem;
-}
 @media(min-width: 1200px){
     .servicesBorder{
         border-radius: 180px;
@@ -751,6 +717,7 @@ header .centerButton{
     }
     .servicesElement .elementContent{
         flex-direction: row;
+        margin-right: auto;
     }
     .servicesElement .elementContent > .text{
         gap: 0;
@@ -869,10 +836,10 @@ header .centerButton{
     line-height: 133.333%;
     letter-spacing: -0.045rem;
 }
-.featureInformation > .stats1 > .text > h5 > span{
+.featureInformation > .stats1 > h5 > span{
     color: var(--remote-red-50, #F43F5E);
 }
-.featureInformation > .stats1 > .text > h6{
+.featureInformation > .stats1 > h6{
     color: var(--osler-gray-60, #647067);
     text-align: center;
     font-family: Nunito;
@@ -889,7 +856,7 @@ header .centerButton{
     justify-content: space-between;
     padding-bottom: 0.75rem;
 }
-.featureInformation > .stats2 > .text > h5{
+.featureInformation > .stats2 > h5{
     color: var(--osler-gray-80, #2F3C33);
     font-family: Nunito;
     font-size: 1.25rem;
@@ -938,29 +905,6 @@ header .centerButton{
     font-weight: 800;
     letter-spacing: -0.02rem;
 }
-
-.featureGetButton{
-    border-radius: 24px;
-    background: var(--osler-gray-80, #2F3C33);
-}
-.featureGetButton > a{
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.featureGetButton > a > h4{
-    color: var(--osler-gray-white, #FFF);
-    font-family: Nunito;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.0225rem;
-    margin: 0;
-    padding-right: 1rem;
-}
-
 
 @media(min-width: 1200px){
     .features{
@@ -1019,4 +963,3 @@ header .centerButton{
         align-items: flex-start;
     }
 }
-
