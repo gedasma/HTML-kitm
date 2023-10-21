@@ -25,7 +25,7 @@ body > .container-fluid > .row{
     margin: 0;
 }
 
-.content > section{
+.content > section, main{
     padding: 0.5rem 1rem;
 }
 
@@ -62,7 +62,7 @@ h1 ,h2, h3, h4 ,h5, h6{
 }
 
 @media(min-width: 1200px){
-    .content > section{
+    .content > section, main{
         padding: 0.75rem 1.5rem;
     }
 }
@@ -1091,4 +1091,191 @@ header .centerButton{
         border-radius: 64px;
         flex: 32%;
     }
+}
+
+/* news */
+
+.news{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.news .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+}
+.news h2{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 122.222%;
+    letter-spacing: -0.0675rem;
+}
+.news-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.news-wide-carousel{
+    display: none;
+}
+.news .carousel-indicators {
+    position: static;
+    height: 8px;
+    border-radius: 4.5px;
+    background: var(--osler-gray-10, #F5F5F5);
+    margin: 0 22% 2rem 22%;
+}
+.news .carousel-indicators [data-bs-target] {
+    pointer-events: none;
+    margin: auto 0;
+    border: 0;
+    width: 100%;
+    height: 8px;
+    border-radius: 3px;
+    opacity: 0;
+}
+.news .carousel-indicators .active {
+    opacity: 1;
+}
+.news-content-control-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.news-content-control-buttons > button{
+    border-radius: 30px;
+    background: var(--healing-green-50, #84CC16);
+    padding: 1.75rem;
+    width: auto;
+    opacity: 1;
+}
+.news-content-control-buttons > button:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--healing-green-50, #84CC16);
+}
+.news .carousel-control-next, .carousel-control-prev {
+    position: static;
+}
+.news-card{
+    height: 34.375rem;
+    border-radius: 48px;
+    background: var(--osler-gray-10, #F5F5F5);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transform: scale(0.90);
+    transition: transform 0.5s ease;
+}
+.news .carousel-item.active > .news-card{
+    transform: scale(1);
+}
+.news-card-information{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+.news-card-information > .dot {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 50%;
+    background: var(--osler-gray-30, #C5C8C6);
+}
+.news-card-information > h6{
+    color: var(--osler-gray-60, #647067);
+    font-family: Nunito;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+.news-card > h4{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.025rem;
+}
+.news-card-tags{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.news-card-tags > div{
+    border-radius: 15px;
+    border: 1px solid var(--osler-gray-60, #647067);
+    padding: 0.625rem 1rem;
+}
+.news-card-tags h5{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+}
+.news .getFeatureButton{
+    width: max-content;
+}
+
+@media(min-width: 1200px){
+    .news{
+        padding: 8rem 8.875rem;
+    }
+    .news > .container{
+        flex-direction: row;
+        gap: 3rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .news h2{
+        font-size: 3rem;
+        line-height: 116.667%;
+        letter-spacing: -0.09rem;
+        order: -2;
+    }
+    .news-content{
+        gap: 3rem;
+    }
+    .news .getFeatureButton{
+        order: -1;
+        align-self: flex-end;
+        align-items: center;
+    }
+    .news-content-controls{
+        padding: top;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .news .carousel-indicators{
+        width: 50%;
+        margin: auto auto auto 0;
+    }
+    .news-content-control-buttons{
+        align-self: flex-end;
+    }
+    .news-thin-carousel{
+        display: none;
+    }
+    .news-wide-carousel{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .news .carousel-item > div{
+        display: flex;
+    }
+    
 }
