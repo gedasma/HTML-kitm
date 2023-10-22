@@ -1277,5 +1277,94 @@ header .centerButton{
     .news .carousel-item > div{
         display: flex;
     }
-    
+}
+
+    /* consultation */
+.consultation-image-desktop{
+    display: none;
+}
+.consultation-border{
+    border-radius: 96px;
+    background: var(--healing-green-20, #D9F99D);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.consultation-info{
+    height: 50%;
+}
+.consultation-info > .container{
+    padding: 4rem  1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.consultation-image{
+    height: 50%;
+}
+.consultation-image > img{
+    width: 100%;
+    object-fit: cover;
+}
+.consultation-header{
+    border-radius: 15px;
+    border: 1px solid var(--osler-gray-80, #2F3C33);
+    display: flex;
+    padding: 0.625rem 1rem;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.consultation-info h3{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.0rem;
+}
+.consultation-info h2{
+    color: var(--osler-gray-80, #2F3C33);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 122.222%;
+    letter-spacing: -0.0675rem;
+}
+
+@media(min-width: 1200px){
+    .consultation-border{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        gap: 8.875rem;
+    }
+    .consultation-image{
+        display: none;
+    }
+    .consultation-image-desktop{
+        display: block;
+        width: 50%;
+    }
+    .consultation-info{
+        padding: 4rem  7.375rem 4rem 0;
+        height: 100%;
+        width: 50%; 
+        margin: auto 0; 
+    }
+    .consultation-info > .container{
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .consultation-info h2{
+        color: var(--osler-gray-80, #2F3C33);
+        font-family: Nunito;
+        font-size: 3.75rem;
+        font-weight: 800;
+        line-height: 113.333%;
+        letter-spacing: -0.1125rem;
+        text-align: left;
+    }
 }
