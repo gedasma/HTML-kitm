@@ -242,6 +242,43 @@ header .centerButton{
     top: 15%;
     left: 75%;
 }
+.heartRateCard-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.25rem;
+}
+.heartRateCard-title > h3{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: -0.00875rem;
+}
+.heartRateCard-info{
+    padding-bottom: 0.5rem;
+}
+.heartRateCard-info > h4{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03rem;
+}
+.heartRateCard-info > h4 > span{
+    color: var(--healing-green-30, #BEF264);
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: -0.00875rem;
+    padding-left: 0.25rem;
+}
+.heartRateCard-chart > img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .nutritionCard{
     border-radius: 22.333px;
     background: var(--osler-gray-white, #FFF);
@@ -252,10 +289,67 @@ header .centerButton{
     flex-direction: column;
     align-items: flex-start;
     gap: 6.979px;
-
     position: absolute;
     top: 37%;
     left: -10%;
+}
+.nutritionCard-title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+    align-items: center;
+    width: 100%;
+}
+.nutritionCard-title > h3{
+    color: var(--osler-gray-80, #2F3C33);
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: -0.00875rem;
+}
+.nutritionCard-info > h4{
+    color: var(--osler-gray-80, #2F3C33);
+    font-family: Nunito;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03rem;
+    padding-bottom: 0.5rem;
+}
+.nutritionCard-info > h4 >span{
+    color: var(--osler-gray-60, #647067);
+    font-family: Nunito;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: -0.00875rem;
+    padding-left: 0.25rem;
+}
+.nutrition-days{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+}
+.nutrition-days > .cellRow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 23.5%;
+}
+.nutrition-days > .cellRow > .cell{
+    border-radius: 2.792px;
+    background: var(--osler-gray-20, #E3E4E3);
+    width: calc(100%/8.1);
+    height: 100%;
+}
+.nutrition-days > .cellRow > .l-green{
+    background: var(--healing-green-20, #D9F99D);
+}
+.nutrition-days > .cellRow > .m-green{
+    background: var(--healing-green-30, #BEF264);
+}
+.nutrition-days > .cellRow > .d-green{
+    background: var(--healing-green-50, #84CC16);
 }
 .doctorSugetionCard{
     display: none;
@@ -347,6 +441,9 @@ header .centerButton{
         top: 55%;
         left: 80%;
     }
+    .nutrition-days{
+        padding-bottom: 0.5rem;
+    }
     .doctorSugetionCard{
         display: block;
         border-radius: 32px;
@@ -355,13 +452,84 @@ header .centerButton{
         height: 7rem;
         width: 21.4375rem;
         padding: 0.75rem;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
+        align-items: center;
         gap: 6.979px;
-
         position: absolute;
         top: 59.5%;
         left: -20%;
+    }
+    .doctorSugetion-Image{
+        border-radius: 24px;
+        overflow: hidden;
+    }
+    .doctorSugetion-information{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        align-items: flex-start;
+        width: max-content;
+    }
+    .doctorSugetion-information > h3{
+        color: var(--osler-gray-80, #2F3C33);
+        font-family: Nunito;
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: -0.02rem;
+    }
+    .doctorSugetion-information > h3 > span{
+        margin-left: 0.25rem;
+    }
+    .doctorSugetion-information > div{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .doctorSugetion-information > div > h4{
+        color: var(--osler-gray-60, #647067);
+        font-family: Nunito;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: -0.075rem;
+    }
+    .doctorSugetion-review{
+        display: flex;
+        align-items: center;
+    }
+    .doctorSugetion-information > div > h4 > span{
+        margin-right: 0.25rem;
+    }
+    .doctorSugetion-information .dot{
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 1.5px;
+        background: var(--osler-gray-30, #C5C8C6);
+    }
+    .doctorSugetion-review > div > .colored{
+        filter: invert(62%) sepia(100%) saturate(392%) hue-rotate(4deg) brightness(150%) contrast(96%);
+    }
+    .doctorSugetion-review{
+        display: flex;
+        align-items: center;
+    }
+    .doctorSugetion-review > h5{
+        color: var(--osler-gray-80, #2F3C33);
+        font-family: Nunito;
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: -0.0075rem;
+        padding-left: 0.25rem;
+    }
+    .doctorSugetion-information > div > h6{
+        color: var(--osler-gray-80, #2F3C33);
+        font-family: Nunito;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: -0.0075rem;
     }
 
     .hero .scrollDownButton{
@@ -1283,6 +1451,9 @@ header .centerButton{
 .consultation-image-desktop{
     display: none;
 }
+.content .consultation{
+    padding: 0 1rem 0.5rem 1rem;
+}
 .consultation-border{
     border-radius: 96px;
     background: var(--healing-green-20, #D9F99D);
@@ -1336,6 +1507,9 @@ header .centerButton{
 }
 
 @media(min-width: 1200px){
+    .content .consultation{
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
     .consultation-border{
         flex-direction: row-reverse;
         justify-content: flex-start;
@@ -1366,5 +1540,170 @@ header .centerButton{
         line-height: 113.333%;
         letter-spacing: -0.1125rem;
         text-align: left;
+    }
+}
+
+/* footer */
+
+footer{
+    border-radius: 96px 96px 0px 0px;
+    background: var(--osler-gray-80, #2F3C33);
+    overflow: hidden;
+}
+.footer-background{
+    background-image: url(../resources/footerBackgroundMobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer .container{
+    padding: 6rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.0625rem;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.footer-header{
+    display: flex;
+    gap: 0.5625rem;
+    justify-content: center;
+}
+.footer-text > p{
+    color: var(--osler-gray-20, #E3E4E3);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.0125rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.footer-links > .dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 6px;
+    background: var(--healing-green-50, #84CC16);
+    margin-bottom: -2.5rem;
+}
+.footer-link > a{
+    color: var(--osler-gray-white, #FFF);
+    font-family: Nunito;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 116.667%;
+    letter-spacing: -0.09rem;
+    opacity: 0.48;
+}
+.footer-link:hover >a{
+    opacity: 1;
+}
+.footer-social-links{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-social-link > a{
+    display: block;
+    border-radius: 24px;
+    border: 1px solid var(--osler-gray-white, #FFF);
+    padding: 0.9375rem;
+}
+.footer-social-link:hover{
+    transform: scale(1.1);
+}
+.footer-copyright{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-copyright > .dot{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 3px;
+    background: var(--osler-gray-70, #48524B);
+}
+.footer-copyright-link{
+    color: var(--osler-gray-white, #FFF);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+}
+.footer-copyright-link:hover > a{
+    color: var(--healing-green-50, #84CC16);
+}
+.footer-buttons{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-buttons > .getFeatureButton{
+    background: var(--healing-green-50, #84CC16);
+}
+@media(min-width: 1200px){
+    footer{
+        border-radius: 180px 180px 0px 0px;
+    }
+    .footer-background{
+        background-image: url(../resources/FooterBackgroundDesktop.svg);
+
+    }
+    footer .container{
+        gap: 5rem;
+        position: relative;
+    }
+    .footer-text{
+        gap: 1.5rem;
+        width: 50%;
+    }
+    .footer-header{
+        height: 3.875rem;
+    }
+    .footer-header img{
+        height: 100%;
+    }
+    .footer-social-links{
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .footer-social-link:nth-child(odd){
+        margin-right: 40%;
+        margin-left: 2rem;
+    }
+    .footer-social-link:nth-child(even){
+        margin-left: 40%;
+        margin-right: 2rem;
+    }
+    .footer-buttons{
+        flex-direction: row;
+    }
+    .footer-buttons > .getFeatureButton{
+        flex: 1;
+    }
+    .footer-buttons > .getFeatureButton > a{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
