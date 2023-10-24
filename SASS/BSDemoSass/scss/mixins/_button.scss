@@ -1,0 +1,11 @@
+@import "../var";
+@import "../mixins/textMixins";
+
+
+@mixin button($backgroundColor, $padding, $borderRadius){
+    background-color: $backgroundColor;
+    padding: $padding;
+    border-radius: $borderRadius;
+    @include headline($smallHeadlineFont, $buttondefaultTextColor);
+    width: max-content;
+}

@@ -1,0 +1,48 @@
+
+@import "../var";
+@import "../mixins/textMixins";
+@import "../mixins/button";
+
+.navigation{
+    padding: 0;
+    &__container {
+        background-color: $primaryColor !important;
+        padding-left: 9%;
+        padding-right: 9%;
+
+        &__brand{
+            display: flex;
+            color: $defaultTextColor;
+            font-family: Jim Nightshade;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 2.875rem 0 1rem 0;
+            &__image{
+                width: 2.4rem;
+                max-width: 100%;
+                object-fit: cover;
+                height: fit-content;
+            }
+        }
+        &__items{
+            margin-left: 0;
+            margin-right: 0 !important;
+            justify-content: flex-end;
+            width: 100%;
+            gap: 3.5rem;
+
+            &__item{
+                @include headline($smallHeadlineFont, $defaultTextColor);
+                padding: 0
+                
+            }
+        }
+        &__contactButton{
+            margin-top: 0.75rem;
+            margin-left: 3.5rem;
+            @include button($secondaryColor, 0.25rem 1.125rem, 10px);
+        }
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navigation navbar navbar-expand-lg bg-body-tertiary">
+            <div class="navigation__container container-fluid">
+                <a class="navigation__container__brand navbar-brand" href="#">
+                  <img class="navigation__container__brand__image" src="media/siteLogo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Educare
+                </a>                
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navigation__container__items navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="navigation__container__items__item nav-item">
+                    <a class="nav-link"href="#">Home</a>
+                  </li>
+                  <li class="navigation__container__items__item nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="navigation__container__items__item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Course1</a></li>
+                      <li><a class="dropdown-item" href="#">Course2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Course3</a></li>
+                      <li><a class="dropdown-item" href="#">Course4</a></li>
+                    </ul>
+                  </li>
+                  <li class="navigation__container__items__item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Blog Page1</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Page2</a></li>
+                      <li><a class="dropdown-item" href="#">Blog Page3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <a class="navigation__container__contactButton nav-link" href="#">Contact Us</a>
+            </div>
+          </nav>
+    </header>
+    <main class="main container">
+        <div class="main__article">
+            <div class="main__article__text">
+                <h2>Start learning with us now</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam  voluptates sed beatae?</p>
+                <a href="#">StartLearning</a>
+            </div>
+            <div class="main__article__image"><img src="/media/Article1Image.png" alt="person reading book"></div>
+        </div>
+
+        <div class="main__article">
+            <div class="main__article__image"><img src="/media/Article2Image.png" alt="person reading book"></div>
+            <div class="main__article__text">
+                <h2>Welcome to the online centers</h2>
+                <ul>
+                    <li>Start learning from your experience</li>
+                    <li>Enhance your skills with us now</li>
+                    <li>Do your favorite course</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main__article">
+            <div class="main__article__text">
+                <h2>Start learning by creating free account and get register</h2>
+            </div>
+            <div class="main__article__image"><img src="/media/Article3Image.png" alt="person reading book"></div>
+        </div>
+    </main>
+    <section class="subscribe container">
+        <form class="subscribe__form">
+            <div class="subscribe__form__field">
+                <input type="name" name="name" id="name" required placeholder="Your name">
+            </div>   
+            <div class="subscribe__form__field">
+                <input type="email" name="email" id="email" required placeholder="Your email address">
+            </div>
+            <div class="subscribe__form__submit">
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

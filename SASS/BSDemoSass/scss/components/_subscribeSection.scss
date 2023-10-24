@@ -1,0 +1,15 @@
+@import "../var";
+@import "../mixins/textMixins";
+
+.subscribe{
+    margin-top: 109px;
+    margin-bottom: 206px;
+    &__form{
+        padding: 38px 45px;
+        display: flex;
+        justify-content: space-between;
+        gap: 45px;
+        background-color: $primaryColor;
+        
+    }
+}

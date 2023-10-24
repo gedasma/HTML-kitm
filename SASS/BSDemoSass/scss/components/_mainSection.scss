@@ -1,0 +1,41 @@
+@import "../var";
+@import "../mixins/textMixins";
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 234px;
+    &__article{
+        display: flex;
+        justify-content: space-between;
+        gap: 107px;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 34px;
+            width: 45%;
+            h2{
+                @include headline($largeHeadlineFont, $defaultTextColor);
+                width: 70%
+            }
+            a{
+                @include button(#682C0E, 6px 26px 8px 32px, 10px);
+            }
+            li{
+                padding-left: 0.5rem;
+                padding-bottom: 1rem;
+                font-size: 1.5rem;
+            }
+        }
+        &__image{
+            // width: 45%;
+            flex: 1;
+            img{
+                width: 100%;
+                object-fit: cover;
+                height: fit-content;
+            }
+        }
+    }
+}

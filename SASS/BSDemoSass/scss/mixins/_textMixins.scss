@@ -1,0 +1,7 @@
+@mixin headline($fontSize, $fontColor){
+    color: $fontColor;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.5;
+}
