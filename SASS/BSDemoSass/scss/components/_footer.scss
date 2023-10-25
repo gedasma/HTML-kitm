@@ -1,0 +1,56 @@
+@import "../var";
+@import "../mixins/textMixins";
+@import "../mixins/brandLogo";
+
+.footer{
+    background-color: $primaryColor;
+    &__container{
+        padding-top: 107px;
+        padding-bottom: 56px;
+        &__content{
+            display: flex;
+            gap: 85px;
+            padding-bottom: 124px;
+            @media(max-width: 1200px){
+                flex-direction: column;;
+                gap: 50px;
+            }
+            h2{
+                @include headline($smallHeadlineFont, $defaultTextColor);
+                padding-bottom: 13px;
+            }
+            li, h3{
+                color: #6C6C6C;
+                font-size: 15px;
+                font-weight: 400;
+                list-style-position: inside;
+            }
+            &__usefullLink{
+                margin-left: -2rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            &__brand{
+                @include brandLogo();
+                align-self: center;
+            }
+            &__socials{
+                &__icons{
+                    display: flex;
+                    gap: 23px;
+                    &>div:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                
+            }
+        }
+        &__copyright{
+            color: #7D7A74;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}

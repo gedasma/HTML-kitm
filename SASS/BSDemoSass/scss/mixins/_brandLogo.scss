@@ -1,0 +1,15 @@
+@mixin brandLogo(){
+    display: flex;
+    color: $defaultTextColor;
+    font-family: Jim Nightshade;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    img{
+        width: 2.4rem;
+        max-width: 100%;
+        object-fit: cover;
+        height: fit-content;
+    }
+}

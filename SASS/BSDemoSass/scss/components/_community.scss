@@ -1,0 +1,89 @@
+@import "../var";
+@import "../mixins/textMixins";
+@import "../mixins/button";
+
+.community{
+    position: relative;
+    height: max-content;
+    padding-bottom: 93px;
+    @media(max-width: 1200px){
+        padding-bottom: 0;
+    }
+    &__content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-left: 45px;
+        width: 57%;
+        align-items: center;
+        top: 0%;
+        left: 0%;
+        @media(max-width: 1200px){
+            position: relative;
+            width: auto;
+            margin-left: 0;
+        }
+        h2{
+            @include headline($largeHeadlineFont, $defaultTextColor);
+            text-align: center;
+            width: 80%;
+            @media(max-width: 1200px){
+                font-size: $largeHeadlineFontMobile;
+            }
+        }
+        p{
+            text-align: center;
+        }
+        a{
+            margin-top: 41px;
+            @include button(#FC8621, 12px 52px, 10px);
+            @media(max-width: 1200px){
+                margin-top: 0;
+                align-self: flex-start;
+                margin-left: 10%;
+                padding: 12px 20px;
+            }
+        }
+    }
+    &__background{
+        position: relative;
+        z-index: -2;
+        padding-left: 20%;
+        padding-top: 10%;
+        height: max-content;
+        @media(max-width: 1200px){
+            padding-top: 0;
+            margin-top: -10%;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__icon{
+        position: absolute;
+        z-index: -1;
+        width: 10%;
+        object-fit: cover;
+        @media(max-width: 1200px){
+            display: none;
+        }
+        &--1{
+            top: 71%;
+            left: 30%;
+        }
+        &--2{
+            top: -9%;
+            left: 60%;
+        }
+        &--3{
+            top: 53%;
+            left: 9%;
+        }
+        &--4{
+            top: 14%;
+            left: 83%;
+        }
+    }
+}

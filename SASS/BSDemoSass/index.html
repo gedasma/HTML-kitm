@@ -15,7 +15,7 @@
                   <img class="navigation__container__brand__image" src="media/siteLogo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                   Educare
                 </a>                
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navigation__container__hamburger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,12 +61,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam  voluptates sed beatae?</p>
                 <a href="#">StartLearning</a>
             </div>
-            <div class="main__article__image"><img src="/media/Article1Image.png" alt="person reading book"></div>
+            <div class="main__article__image"><img src="media/Article1Image.png" alt="person reading book"></div>
         </div>
 
         <div class="main__article">
-            <div class="main__article__image"><img src="/media/Article2Image.png" alt="person reading book"></div>
-            <div class="main__article__text">
+            <div class="main__article__image"><img src="media/Article2Image.png" alt="person reading book"></div>
+            <div class="main__article__text main__article__text--reversed">
                 <h2>Welcome to the online centers</h2>
                 <ul>
                     <li>Start learning from your experience</li>
@@ -80,21 +80,65 @@
             <div class="main__article__text">
                 <h2>Start learning by creating free account and get register</h2>
             </div>
-            <div class="main__article__image"><img src="/media/Article3Image.png" alt="person reading book"></div>
+            <div class="main__article__image"><img src="media/Article3Image.png" alt="person reading book"></div>
         </div>
     </main>
     <section class="subscribe container">
         <form class="subscribe__form">
-            <div class="subscribe__form__field">
-                <input type="name" name="name" id="name" required placeholder="Your name">
-            </div>   
-            <div class="subscribe__form__field">
-                <input type="email" name="email" id="email" required placeholder="Your email address">
-            </div>
-            <div class="subscribe__form__submit">
-                <button type="submit">Subscribe</button>
-            </div>
+          <input class="subscribe__form__field" type="name" name="name" id="name" required placeholder="Your name">
+          <input class="subscribe__form__field" type="email" name="email" id="email" required placeholder="Your email address">
+          <button class="subscribe__form__field subscribe__form__field--button" type="submit">Subscribe</button>
         </form>
     </section>
+    <section class="community container">
+        <div class="community__content">
+          <h2>Start growing with our community</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+          <a href="#">Join community</a>
+        </div>
+      <div class="community__background"><img src="media/communityBackground.png" alt="woman with book"></div>
+      <img class="community__icon community__icon--1" src="media/Ellipse 1.svg" alt="worker">
+      <img class="community__icon community__icon--2" src="media/Ellipse 2.svg" alt="worker">
+      <img class="community__icon community__icon--3" src="media/Ellipse 3.svg" alt="worker">
+      <img class="community__icon community__icon--4" src="media/Ellipse 4.svg" alt="worker">
+      <div></div>
+    </section>
+    <footer class="footer container-fluid">
+      <div class="footer__container container">
+        <div class="footer__container__content">
+          <a class="footer__container__content__brand" href="#">
+            <img class="navigation__container__brand__image" src="media/siteLogo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Educare
+          </a>
+          <div class="footer__container__content__socials">
+            <h2>Follow Us</h2>
+            <div class="footer__container__content__socials__icons">
+              <div><a href="#"><img src="media/et_twitter.svg" alt="twitter icon"></a></div>
+              <div><a href="#"><img src="media//et_linkedin.svg" alt="linkedin icon"></a></div>
+              <div><a href="#"><img src="media/circum_facebook.svg" alt="facebook icon"></a></div>
+              <div><a href="#"><img src="media/bxl_instagram.svg" alt="instagram icon"></a></div>
+            </div>
+          </div>
+          <div>
+            <h2>Useful Links</h2>
+            <ul>
+              <li class="footer__container__content__usefullLink"><a href="#">Our Projects</a></li>
+              <li class="footer__container__content__usefullLink"><a href="#">FAQ's</a></li>
+              <li class="footer__container__content__usefullLink"><a href="#">News and Updates</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__content__contacts">
+            <h2>Contacts</h2>
+            <h3>Address : 4-5 Main road , Delhi</h3>
+            <h3>Email : educare@gmail.com</h3>
+            <h3>Phone Number : +91 4533433265</h3>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__container__copyright">&copy; All Copyrights reserved</h3>
+        </div>
+      </div>
+
+    </footer>
 </body>
 </html>

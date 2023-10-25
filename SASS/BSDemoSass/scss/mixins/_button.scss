@@ -8,4 +8,8 @@
     border-radius: $borderRadius;
     @include headline($smallHeadlineFont, $buttondefaultTextColor);
     width: max-content;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px 0px $primaryColor;
+    }
 }

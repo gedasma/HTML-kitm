@@ -2,6 +2,7 @@
 @import "../var";
 @import "../mixins/textMixins";
 @import "../mixins/button";
+@import "../mixins/brandLogo";
 
 .navigation{
     padding: 0;
@@ -9,26 +10,25 @@
         background-color: $primaryColor !important;
         padding-left: 9%;
         padding-right: 9%;
-
+        @media(max-width: 1200px){
+            justify-content: flex-end !important;
+            padding: 0 2% 1rem 2%;
+        }
         &__brand{
-            display: flex;
-            color: $defaultTextColor;
-            font-family: Jim Nightshade;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            @include brandLogo();
             padding: 2.875rem 0 1rem 0;
-            &__image{
-                width: 2.4rem;
-                max-width: 100%;
-                object-fit: cover;
-                height: fit-content;
+            @media(max-width: 1200px){
+                padding-top: 1.25rem;
+            }
+        }
+        &__hamburger{
+            @media(max-width: 1200px){
+                order: 3;
             }
         }
         &__items{
             margin-left: 0;
-            margin-right: 0 !important;
+            margin-right: 3.5rem !important;
             justify-content: flex-end;
             width: 100%;
             gap: 3.5rem;
@@ -41,8 +41,11 @@
         }
         &__contactButton{
             margin-top: 0.75rem;
-            margin-left: 3.5rem;
             @include button($secondaryColor, 0.25rem 1.125rem, 10px);
+            @media(max-width: 1200px){
+                margin: 0 auto;
+                padding: 4px 8px;
+            }
         }
     }
 }
